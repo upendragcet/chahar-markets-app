@@ -1,0 +1,21 @@
+default: &default
+  external_url: <%= APP_URL %>
+  from: 'upendragcet@gmail.com'
+  smtp:
+    address: 'smtp.gmail.com'
+    port: 587
+    user_name: <%= ENV['SMTP_USER_NAME'] %>
+    password: <%= ENV['SMTP_PASSWORD'] %>
+    domain: 'gmail.com'
+    authentication: 'login'
+    enable_starttls_auto: true
+    openssl_verify_mode: 'none'
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
