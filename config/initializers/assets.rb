@@ -9,7 +9,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w(Signup_bundle.js)
 Rails.application.config.assets.precompile += %w(Signin_bundle.js)
-Rails.application.config.assets.precompile += %w(app_bundle.js)
+Rails.application.config.assets.precompile += %w(App_bundle.js)
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
