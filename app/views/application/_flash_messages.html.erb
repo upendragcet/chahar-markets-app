@@ -1,0 +1,21 @@
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <div class="alert alert-dismissible alert-<%= name == 'notice' ? 'success' : 'danger' %>">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.present? %>
+    </div>
+  <% end %>
+  <% if msg.is_a?(Hash) %>
+    <div class="alert alert-dismissible alert-<%= name == 'notice' ? 'success' : 'danger' %>">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <% msg.each do |key, value| %>
+          <% unless msg[key].blank? %>
+            <b><%= key.to_s.capitalize %></b>
+            <% value.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+  <% end %>
+<% end %>
