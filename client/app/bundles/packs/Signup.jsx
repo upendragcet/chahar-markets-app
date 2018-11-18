@@ -2,7 +2,7 @@ import React from 'react';
 import ReactOnRails from 'react-on-rails';
 import FlashMessage from '../src/components/common/FlashMessage';
 import CustomTextField from '../src/components/common/CustomTextField';
-import Spinner from '../src/components/common/spinner';
+import Spinner from '../src/components/common/Spinner';
 import {IntlProvider} from 'react-intl';
 import translations from '../i18n/translations.json'
 import { MuiThemeProvider } from '@material-ui/core/styles';
