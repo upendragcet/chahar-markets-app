@@ -1,0 +1,13 @@
+{
+  "en":{
+    "english": "English",
+    "email": "Email",
+    "mobile_placeholder": "Enter phone number",
+    "signup.first_name_label": "First Name",
+    "signup.last_name_label": "Last Name",
+    "signup.password_label": "Password",
+    "signup.password_confirmation": "Confirm Password",
+    "signup.phone_number_label": "Mobile",
+    "signup.mobile_help_text": "Enter phone number"
+  }
+}

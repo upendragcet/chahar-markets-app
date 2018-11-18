@@ -1,0 +1,8 @@
+<% content_for(:head) do %>
+  <%= javascript_include_tag 'app_bundle.js' %>
+<% end %>
+
+<%= react_component('App', props: { locale: 'en',
+                                    user_logged_in: user_signed_in?,
+                                    user_id: current_user ? current_user.id : '',
+                                  }) %>
